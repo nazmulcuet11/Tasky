@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol CheckboxDelegate: AnyObject {
-    func onTapCheckbox(_ checkbox: Checkbox)
+protocol CheckboxViewModelDelegate: AnyObject {
+    func onTapCheckbox(_ checkbox: CheckboxViewModel)
 }

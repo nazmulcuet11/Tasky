@@ -10,9 +10,9 @@ import SwiftUI
 
 
 @Observable
-final class Checkbox {
+final class CheckboxViewModel {
     var isChecked: Bool
-    weak var delegate: CheckboxDelegate?
+    weak var delegate: CheckboxViewModelDelegate?
 
     init(isChecked: Bool = false) {
         self.isChecked = isChecked

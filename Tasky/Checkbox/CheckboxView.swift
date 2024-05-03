@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CheckboxView: View {
-    var checkbox: Checkbox
+    var checkbox: CheckboxViewModel
 
     var body: some View {
         Image(systemName: imageName)

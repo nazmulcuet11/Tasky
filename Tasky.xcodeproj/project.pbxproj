@@ -12,9 +12,9 @@
 		380DF51C2BE3C5D700F88662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380DF51B2BE3C5D700F88662 /* Assets.xcassets */; };
 		380DF5202BE3C5D700F88662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380DF51F2BE3C5D700F88662 /* Preview Assets.xcassets */; };
 		380DF5282BE3CA0E00F88662 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5272BE3CA0E00F88662 /* CheckboxView.swift */; };
-		380DF52A2BE3CA3500F88662 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5292BE3CA3500F88662 /* Checkbox.swift */; };
-		380DF52C2BE3CA7F00F88662 /* Checkbox+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF52B2BE3CA7F00F88662 /* Checkbox+Preview.swift */; };
-		380DF52E2BE3CADC00F88662 /* CheckboxDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF52D2BE3CADC00F88662 /* CheckboxDelegate.swift */; };
+		380DF52A2BE3CA3500F88662 /* CheckboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5292BE3CA3500F88662 /* CheckboxViewModel.swift */; };
+		380DF52C2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF52B2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift */; };
+		380DF52E2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF52D2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		380DF51D2BE3C5D700F88662 /* Tasky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasky.entitlements; sourceTree = "<group>"; };
 		380DF51F2BE3C5D700F88662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		380DF5272BE3CA0E00F88662 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
-		380DF5292BE3CA3500F88662 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
-		380DF52B2BE3CA7F00F88662 /* Checkbox+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkbox+Preview.swift"; sourceTree = "<group>"; };
-		380DF52D2BE3CADC00F88662 /* CheckboxDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxDelegate.swift; sourceTree = "<group>"; };
+		380DF5292BE3CA3500F88662 /* CheckboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxViewModel.swift; sourceTree = "<group>"; };
+		380DF52B2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CheckboxViewModel+Preview.swift"; sourceTree = "<group>"; };
+		380DF52D2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxViewModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +81,9 @@
 		380DF5262BE3C9D200F88662 /* Checkbox */ = {
 			isa = PBXGroup;
 			children = (
-				380DF5292BE3CA3500F88662 /* Checkbox.swift */,
-				380DF52B2BE3CA7F00F88662 /* Checkbox+Preview.swift */,
-				380DF52D2BE3CADC00F88662 /* CheckboxDelegate.swift */,
+				380DF5292BE3CA3500F88662 /* CheckboxViewModel.swift */,
+				380DF52B2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift */,
+				380DF52D2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift */,
 				380DF5272BE3CA0E00F88662 /* CheckboxView.swift */,
 			);
 			path = Checkbox;
@@ -159,12 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				380DF52E2BE3CADC00F88662 /* CheckboxDelegate.swift in Sources */,
+				380DF52E2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift in Sources */,
 				380DF5282BE3CA0E00F88662 /* CheckboxView.swift in Sources */,
-				380DF52A2BE3CA3500F88662 /* Checkbox.swift in Sources */,
+				380DF52A2BE3CA3500F88662 /* CheckboxViewModel.swift in Sources */,
 				380DF51A2BE3C5D600F88662 /* ContentView.swift in Sources */,
 				380DF5182BE3C5D600F88662 /* TaskyApp.swift in Sources */,
-				380DF52C2BE3CA7F00F88662 /* Checkbox+Preview.swift in Sources */,
+				380DF52C2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
