@@ -28,6 +28,8 @@ final class TaskRowViewModel {
     }
 }
 
+// MARK: - CheckboxViewModelDelegate
+
 extension TaskRowViewModel: CheckboxViewModelDelegate {
     func onTapCheckbox(_ checkbox: CheckboxViewModel) { 
         delegate?.onTapCheckbox(self)

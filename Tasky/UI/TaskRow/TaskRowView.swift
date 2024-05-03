@@ -17,7 +17,6 @@ struct TaskRowView: View {
                 .strikethrough(viewModel.checkbox.isChecked)
             Spacer()
         }
-
     }
 }
 
