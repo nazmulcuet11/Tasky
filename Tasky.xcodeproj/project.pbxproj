@@ -60,7 +60,7 @@
 		380DF5162BE3C5D600F88662 /* Tasky */ = {
 			isa = PBXGroup;
 			children = (
-				380DF5262BE3C9D200F88662 /* Checkbox */,
+				380DF52F2BE5227500F88662 /* UI */,
 				380DF5172BE3C5D600F88662 /* TaskyApp.swift */,
 				380DF5192BE3C5D600F88662 /* ContentView.swift */,
 				380DF51B2BE3C5D700F88662 /* Assets.xcassets */,
@@ -87,6 +87,14 @@
 				380DF5272BE3CA0E00F88662 /* CheckboxView.swift */,
 			);
 			path = Checkbox;
+			sourceTree = "<group>";
+		};
+		380DF52F2BE5227500F88662 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				380DF5262BE3C9D200F88662 /* Checkbox */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
