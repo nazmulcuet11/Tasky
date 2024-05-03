@@ -11,8 +11,9 @@ import SwiftUI
 
 @Observable
 final class CheckboxViewModel {
-    var isChecked: Bool
     weak var delegate: CheckboxViewModelDelegate?
+
+    private(set) var isChecked: Bool
 
     init(isChecked: Bool = false) {
         self.isChecked = isChecked

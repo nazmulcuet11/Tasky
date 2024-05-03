@@ -15,6 +15,10 @@
 		380DF52A2BE3CA3500F88662 /* CheckboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5292BE3CA3500F88662 /* CheckboxViewModel.swift */; };
 		380DF52C2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF52B2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift */; };
 		380DF52E2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF52D2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift */; };
+		380DF5322BE522B800F88662 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5312BE522B800F88662 /* TaskRowView.swift */; };
+		380DF5342BE522C700F88662 /* TaskRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5332BE522C700F88662 /* TaskRowViewModel.swift */; };
+		380DF5362BE522DD00F88662 /* TaskRowViewModel+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5352BE522DD00F88662 /* TaskRowViewModel+Preview.swift */; };
+		380DF5382BE5230900F88662 /* TaskRowViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5372BE5230900F88662 /* TaskRowViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		380DF5292BE3CA3500F88662 /* CheckboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxViewModel.swift; sourceTree = "<group>"; };
 		380DF52B2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CheckboxViewModel+Preview.swift"; sourceTree = "<group>"; };
 		380DF52D2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxViewModelDelegate.swift; sourceTree = "<group>"; };
+		380DF5312BE522B800F88662 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		380DF5332BE522C700F88662 /* TaskRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowViewModel.swift; sourceTree = "<group>"; };
+		380DF5352BE522DD00F88662 /* TaskRowViewModel+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskRowViewModel+Preview.swift"; sourceTree = "<group>"; };
+		380DF5372BE5230900F88662 /* TaskRowViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowViewModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +101,20 @@
 			isa = PBXGroup;
 			children = (
 				380DF5262BE3C9D200F88662 /* Checkbox */,
+				380DF5302BE5229F00F88662 /* TaskRow */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		380DF5302BE5229F00F88662 /* TaskRow */ = {
+			isa = PBXGroup;
+			children = (
+				380DF5332BE522C700F88662 /* TaskRowViewModel.swift */,
+				380DF5352BE522DD00F88662 /* TaskRowViewModel+Preview.swift */,
+				380DF5372BE5230900F88662 /* TaskRowViewModelDelegate.swift */,
+				380DF5312BE522B800F88662 /* TaskRowView.swift */,
+			);
+			path = TaskRow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380DF5342BE522C700F88662 /* TaskRowViewModel.swift in Sources */,
+				380DF5382BE5230900F88662 /* TaskRowViewModelDelegate.swift in Sources */,
 				380DF52E2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift in Sources */,
 				380DF5282BE3CA0E00F88662 /* CheckboxView.swift in Sources */,
 				380DF52A2BE3CA3500F88662 /* CheckboxViewModel.swift in Sources */,
+				380DF5322BE522B800F88662 /* TaskRowView.swift in Sources */,
+				380DF5362BE522DD00F88662 /* TaskRowViewModel+Preview.swift in Sources */,
 				380DF51A2BE3C5D600F88662 /* ContentView.swift in Sources */,
 				380DF5182BE3C5D600F88662 /* TaskyApp.swift in Sources */,
 				380DF52C2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift in Sources */,
