@@ -22,8 +22,11 @@ final class TaskListSectionViewModel {
         self.title = title
         self.rows = rows
         self.delegate = delegate
-        
-        // set delegates
+
+        setDelegates()
+    }
+
+    private func setDelegates() {
         for row in rows {
             row.delegate = self
         }

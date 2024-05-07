@@ -23,7 +23,10 @@ final class TaskListRowViewModel: Identifiable {
         self.title = title
         self.delegate = delegate
 
-        // set delegates
+        setDelegates()
+    }
+
+    private func setDelegates() {
         checkbox.delegate = self
     }
 }
