@@ -8,7 +8,7 @@
 import Foundation
 
 extension CheckboxViewModel {
-    static func preview() -> CheckboxViewModel {
-        CheckboxViewModel(isChecked: false)
+    static func preview(isChecked: Bool = false) -> CheckboxViewModel {
+        CheckboxViewModel(isChecked: isChecked)
     }
 }

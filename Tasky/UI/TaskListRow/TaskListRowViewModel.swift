@@ -8,7 +8,7 @@
 import Foundation
 
 @Observable
-final class TaskListRowViewModel {
+final class TaskListRowViewModel: Identifiable {
     weak var delegate: TaskListRowViewModelDelegate?
 
     private(set) var checkbox: CheckboxViewModel

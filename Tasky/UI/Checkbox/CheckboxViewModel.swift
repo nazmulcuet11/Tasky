@@ -15,8 +15,12 @@ final class CheckboxViewModel {
 
     private(set) var isChecked: Bool
 
-    init(isChecked: Bool = false) {
+    init(
+        isChecked: Bool = false,
+        delegate: CheckboxViewModelDelegate? = nil
+    ) {
         self.isChecked = isChecked
+        self.delegate = delegate
     }
 
     func onTapCheckbox() {

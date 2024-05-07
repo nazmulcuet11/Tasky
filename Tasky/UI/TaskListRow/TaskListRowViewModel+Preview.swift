@@ -8,10 +8,13 @@
 import Foundation
 
 extension TaskListRowViewModel {
-    static func preview() -> TaskListRowViewModel {
+    static func preview(
+        checkbox: CheckboxViewModel = .preview(),
+        title: String = "Do this"
+    ) -> TaskListRowViewModel {
         return TaskListRowViewModel(
-            checkbox: .preview(),
-            title: "Do this"
+            checkbox: checkbox,
+            title: title
         )
     }
 }
