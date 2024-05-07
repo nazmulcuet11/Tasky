@@ -20,6 +20,9 @@
 		380DF5362BE522DD00F88662 /* TaskListRowViewModel+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5352BE522DD00F88662 /* TaskListRowViewModel+Preview.swift */; };
 		380DF5382BE5230900F88662 /* TaskListRowViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380DF5372BE5230900F88662 /* TaskListRowViewModelDelegate.swift */; };
 		387F70E82BEA517B00A2159A /* TaskListSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F70E72BEA517B00A2159A /* TaskListSectionViewModel.swift */; };
+		387F70EA2BEA52DA00A2159A /* TaskListSectionViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F70E92BEA52DA00A2159A /* TaskListSectionViewModelDelegate.swift */; };
+		387F70EC2BEA541B00A2159A /* TaskListSectionViewModel+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F70EB2BEA541B00A2159A /* TaskListSectionViewModel+Preview.swift */; };
+		387F70EE2BEA54C500A2159A /* TaskListSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F70ED2BEA54C500A2159A /* TaskListSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		380DF5352BE522DD00F88662 /* TaskListRowViewModel+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskListRowViewModel+Preview.swift"; sourceTree = "<group>"; };
 		380DF5372BE5230900F88662 /* TaskListRowViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListRowViewModelDelegate.swift; sourceTree = "<group>"; };
 		387F70E72BEA517B00A2159A /* TaskListSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListSectionViewModel.swift; sourceTree = "<group>"; };
+		387F70E92BEA52DA00A2159A /* TaskListSectionViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListSectionViewModelDelegate.swift; sourceTree = "<group>"; };
+		387F70EB2BEA541B00A2159A /* TaskListSectionViewModel+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskListSectionViewModel+Preview.swift"; sourceTree = "<group>"; };
+		387F70ED2BEA54C500A2159A /* TaskListSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +110,7 @@
 			children = (
 				380DF5262BE3C9D200F88662 /* Checkbox */,
 				380DF5302BE5229F00F88662 /* TaskListRow */,
-				387F70E62BEA514300A2159A /* TaskSection */,
+				387F70E62BEA514300A2159A /* TaskListSection */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -120,12 +126,15 @@
 			path = TaskListRow;
 			sourceTree = "<group>";
 		};
-		387F70E62BEA514300A2159A /* TaskSection */ = {
+		387F70E62BEA514300A2159A /* TaskListSection */ = {
 			isa = PBXGroup;
 			children = (
 				387F70E72BEA517B00A2159A /* TaskListSectionViewModel.swift */,
+				387F70EB2BEA541B00A2159A /* TaskListSectionViewModel+Preview.swift */,
+				387F70E92BEA52DA00A2159A /* TaskListSectionViewModelDelegate.swift */,
+				387F70ED2BEA54C500A2159A /* TaskListSectionView.swift */,
 			);
-			path = TaskSection;
+			path = TaskListSection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +209,15 @@
 			files = (
 				380DF5342BE522C700F88662 /* TaskListRowViewModel.swift in Sources */,
 				380DF5382BE5230900F88662 /* TaskListRowViewModelDelegate.swift in Sources */,
+				387F70EC2BEA541B00A2159A /* TaskListSectionViewModel+Preview.swift in Sources */,
 				380DF52E2BE3CADC00F88662 /* CheckboxViewModelDelegate.swift in Sources */,
 				380DF5282BE3CA0E00F88662 /* CheckboxView.swift in Sources */,
 				380DF52A2BE3CA3500F88662 /* CheckboxViewModel.swift in Sources */,
 				380DF5322BE522B800F88662 /* TaskListRowView.swift in Sources */,
 				380DF5362BE522DD00F88662 /* TaskListRowViewModel+Preview.swift in Sources */,
 				380DF51A2BE3C5D600F88662 /* ContentView.swift in Sources */,
+				387F70EE2BEA54C500A2159A /* TaskListSectionView.swift in Sources */,
+				387F70EA2BEA52DA00A2159A /* TaskListSectionViewModelDelegate.swift in Sources */,
 				380DF5182BE3C5D600F88662 /* TaskyApp.swift in Sources */,
 				380DF52C2BE3CA7F00F88662 /* CheckboxViewModel+Preview.swift in Sources */,
 				387F70E82BEA517B00A2159A /* TaskListSectionViewModel.swift in Sources */,
