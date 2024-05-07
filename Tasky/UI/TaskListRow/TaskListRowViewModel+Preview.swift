@@ -7,9 +7,9 @@
 
 import Foundation
 
-extension TaskRowViewModel {
-    static func preview() -> TaskRowViewModel {
-        return TaskRowViewModel(
+extension TaskListRowViewModel {
+    static func preview() -> TaskListRowViewModel {
+        return TaskListRowViewModel(
             checkbox: .preview(),
             title: "Do this"
         )

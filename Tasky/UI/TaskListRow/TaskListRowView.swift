@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct TaskRowView: View {
-    var viewModel: TaskRowViewModel
+struct TaskListRowView: View {
+    var viewModel: TaskListRowViewModel
 
     var body: some View {
         HStack {
@@ -21,5 +21,5 @@ struct TaskRowView: View {
 }
 
 #Preview {
-    TaskRowView(viewModel: .preview())
+    TaskListRowView(viewModel: .preview())
 }

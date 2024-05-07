@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol TaskRowViewModelDelegate: AnyObject {
-    func onTapCheckbox(_ taskRowViewModel: TaskRowViewModel)
+protocol TaskListRowViewModelDelegate: AnyObject {
+    func onTapCheckbox(in rowViewModel: TaskListRowViewModel)
 }

@@ -8,8 +8,8 @@
 import Foundation
 
 @Observable
-final class TaskRowViewModel {
-    weak var delegate: TaskRowViewModelDelegate?
+final class TaskListRowViewModel {
+    weak var delegate: TaskListRowViewModelDelegate?
 
     private(set) var checkbox: CheckboxViewModel
     private(set) var title: String
@@ -17,7 +17,7 @@ final class TaskRowViewModel {
     init(
         checkbox: CheckboxViewModel,
         title: String,
-        delegate: TaskRowViewModelDelegate? = nil
+        delegate: TaskListRowViewModelDelegate? = nil
     ) {
         self.checkbox = checkbox
         self.title = title
@@ -30,8 +30,8 @@ final class TaskRowViewModel {
 
 // MARK: - CheckboxViewModelDelegate
 
-extension TaskRowViewModel: CheckboxViewModelDelegate {
+extension TaskListRowViewModel: CheckboxViewModelDelegate {
     func onTapCheckbox(_ checkbox: CheckboxViewModel) { 
-        delegate?.onTapCheckbox(self)
+        delegate?.onTapCheckbox(in: self)
     }
 }
