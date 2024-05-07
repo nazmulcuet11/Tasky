@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State
+    var taskListViewModel = TaskListViewModel.preview()
+
     var body: some View {
         NavigationStack {
-            TaskListView(viewModel: .preview())
+            TaskListView(viewModel: taskListViewModel)
         }
     }
 }

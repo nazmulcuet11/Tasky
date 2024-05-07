@@ -26,6 +26,16 @@ final class TaskListSectionViewModel: Identifiable {
         setDelegates()
     }
 
+    func add(row: TaskListRowViewModel) {
+        row.delegate = self
+        rows.append(row)
+    }
+
+    func remove(row: TaskListRowViewModel) {
+        row.delegate = nil
+        rows.removeAll { $0.id == row.id }
+    }
+
     private func setDelegates() {
         for row in rows {
             row.delegate = self

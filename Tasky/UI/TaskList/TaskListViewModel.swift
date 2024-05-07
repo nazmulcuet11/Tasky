@@ -12,24 +12,26 @@ final class TaskListViewModel {
     weak var delegate: TaskListViewModelDelegate?
 
     private(set) var title: String
-    private(set) var sections: [TaskListSectionViewModel]
+    private(set) var todos: TaskListSectionViewModel
+    private(set) var dones: TaskListSectionViewModel
 
     init( 
         title: String,
-        sections: [TaskListSectionViewModel],
+        todos: TaskListSectionViewModel,
+        dones: TaskListSectionViewModel,
         delegate: TaskListViewModelDelegate? = nil
     ) {
         self.title = title
-        self.sections = sections
+        self.todos = todos
+        self.dones = dones
         self.delegate = delegate
 
         setDelegates()
     }
 
     private func setDelegates() {
-        for section in sections {
-            section.delegate = self
-        }
+        todos.delegate = self
+        dones.delegate = self
     }
 }
 
@@ -38,6 +40,14 @@ extension TaskListViewModel: TaskListSectionViewModelDelegate {
         row: TaskListRowViewModel,
         section: TaskListSectionViewModel
     ) {
+        if section === todos {
+            todos.remove(row: row)
+            dones.add(row: row)
+        } else if section === dones {
+            dones.remove(row: row)
+            todos.add(row: row)
+        }
+
         delegate?.onTapCheckbox(row: row, section: section, list: self)
     }
 }

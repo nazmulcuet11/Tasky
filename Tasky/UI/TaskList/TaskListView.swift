@@ -12,9 +12,8 @@ struct TaskListView: View {
 
     var body: some View {
         List {
-            ForEach(viewModel.sections) {
-                TaskListSectionView(viewModel: $0)
-            }
+            TaskListSectionView(viewModel: viewModel.todos)
+            TaskListSectionView(viewModel: viewModel.dones)
         }
         .navigationTitle(viewModel.title)
     }
