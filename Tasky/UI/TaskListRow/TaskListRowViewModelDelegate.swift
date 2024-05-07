@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TaskListRowViewModelDelegate: AnyObject {
-    func onTapCheckbox(in rowViewModel: TaskListRowViewModel)
+    func onTapCheckbox(row: TaskListRowViewModel)
 }

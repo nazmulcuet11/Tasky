@@ -9,7 +9,7 @@ import Foundation
 
 protocol TaskListSectionViewModelDelegate: AnyObject {
     func onTapCheckbox(
-        in rowViewModel: TaskListRowViewModel,
-        from sectionViewModel: TaskListSectionViewModel
+        row: TaskListRowViewModel,
+        section: TaskListSectionViewModel
     )
 }

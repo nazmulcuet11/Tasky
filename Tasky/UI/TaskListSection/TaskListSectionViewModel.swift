@@ -34,7 +34,7 @@ final class TaskListSectionViewModel {
 }
 
 extension TaskListSectionViewModel: TaskListRowViewModelDelegate {
-    func onTapCheckbox(in rowViewModel: TaskListRowViewModel) {
-        delegate?.onTapCheckbox(in: rowViewModel, from: self)
+    func onTapCheckbox(row: TaskListRowViewModel) {
+        delegate?.onTapCheckbox(row: row, section: self)
     }
 }

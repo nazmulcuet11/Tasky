@@ -35,6 +35,6 @@ final class TaskListRowViewModel: Identifiable {
 
 extension TaskListRowViewModel: CheckboxViewModelDelegate {
     func onTapCheckbox(_ checkbox: CheckboxViewModel) { 
-        delegate?.onTapCheckbox(in: self)
+        delegate?.onTapCheckbox(row: self)
     }
 }
