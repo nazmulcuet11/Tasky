@@ -11,17 +11,14 @@ import Foundation
 final class TaskListViewModel {
     weak var delegate: TaskListViewModelDelegate?
 
-    private(set) var title: String
     private(set) var todos: TaskListSectionViewModel
     private(set) var dones: TaskListSectionViewModel
 
-    init( 
-        title: String,
+    init(
         todos: TaskListSectionViewModel,
         dones: TaskListSectionViewModel,
         delegate: TaskListViewModelDelegate? = nil
     ) {
-        self.title = title
         self.todos = todos
         self.dones = dones
         self.delegate = delegate

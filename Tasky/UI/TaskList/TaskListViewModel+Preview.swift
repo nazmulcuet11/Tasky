@@ -31,12 +31,10 @@ extension TaskListViewModel {
     }
 
     static func preview(
-        title: String = "Tasks",
         todos: TaskListSectionViewModel = todos(),
         dones: TaskListSectionViewModel = dones()
     ) -> TaskListViewModel {
         return TaskListViewModel(
-            title:title,
             todos: todos,
             dones: dones
         )

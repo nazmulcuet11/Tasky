@@ -15,12 +15,9 @@ struct TaskListView: View {
             TaskListSectionView(viewModel: viewModel.todos)
             TaskListSectionView(viewModel: viewModel.dones)
         }
-        .navigationTitle(viewModel.title)
     }
 }
 
 #Preview {
-    NavigationStack {
-        TaskListView(viewModel: .preview())
-    }
+    TaskListView(viewModel: .preview())
 }

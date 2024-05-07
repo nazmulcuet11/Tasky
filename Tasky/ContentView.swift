@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State
-    var taskListViewModel = TaskListViewModel.preview()
+    var taskListViewModel = TasksViewModel.preview()
 
     var body: some View {
         NavigationStack {
-            TaskListView(viewModel: taskListViewModel)
+            TasksView(viewModel: taskListViewModel)
         }
     }
 }
