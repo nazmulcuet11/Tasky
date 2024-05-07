@@ -8,7 +8,7 @@
 import Foundation
 
 @Observable
-final class TaskListSectionViewModel {
+final class TaskListSectionViewModel: Identifiable {
     weak var delegate: TaskListSectionViewModelDelegate?
 
     private(set) var title: String
