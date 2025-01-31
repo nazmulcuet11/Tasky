@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TaskListSectionView: View {
-    var viewModel: TaskListSectionViewModel
+    let viewModel: TaskListSectionViewModel
 
     var body: some View {
         Section {

@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct CheckboxView: View {
-    var checkbox: CheckboxViewModel
+    let viewModel: CheckboxViewModel
 
     var body: some View {
         Image(systemName: imageName)
             .onTapGesture {
                 withAnimation {
-                    checkbox.onTapCheckbox()
+                    viewModel.onTapCheckbox()
                 }
             }
     }
 
     var imageName: String {
-        checkbox.isChecked ? "checkmark.square" : "square"
+        viewModel.isChecked ? "checkmark.square" : "square"
     }
 }
 
 #Preview {
-    CheckboxView(checkbox: .preview())
+    CheckboxView(viewModel: .preview())
 }

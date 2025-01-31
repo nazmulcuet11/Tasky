@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TaskListRowView: View {
-    var viewModel: TaskListRowViewModel
+    let viewModel: TaskListRowViewModel
 
     var body: some View {
         HStack {
-            CheckboxView(checkbox: viewModel.checkbox)
+            CheckboxView(viewModel: viewModel.checkbox)
             Text(viewModel.title)
                 .strikethrough(viewModel.checkbox.isChecked)
             Spacer()
